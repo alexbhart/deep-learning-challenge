@@ -17,7 +17,7 @@ The purpose of our analysis is to see if we can design a model that will help us
     * Neurons in First Layer: 80
     * Neurons in Second Layer: 30
     * Third is Output with Sigmoid Activation
-    ![First Models Hyperparameters](Images\first_model_shape.png)
+    ![](Images\first_model_shape.png)
     ![First Models Evaluation](Images\first_eval.png)
 
  * Our step to try and improve the performance of the model was to import keras-tuner and run the function of testing many different layer and neuron combinations. It was not in the best interest of the model to reduce the features set any further, as the categorical features had already been binned. 
