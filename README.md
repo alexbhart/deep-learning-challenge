@@ -17,22 +17,21 @@ The purpose of our analysis is to see if we can design a model that will help us
     * Neurons in First Layer: 80
     * Neurons in Second Layer: 30
     * Third is Output with Sigmoid Activation
-    ![](Images\first_model_shape.png)
-    ![First Models Evaluation](Images\first_eval.png)
+    ![First Model Details](Images/first_model_shape.png)
+    ![First Models Evaluation](Images/first_eval.png)
 
  * Our step to try and improve the performance of the model was to import keras-tuner and run the function of testing many different layer and neuron combinations. It was not in the best interest of the model to reduce the features set any further, as the categorical features had already been binned. 
 
  * After running keras-tuner, it was determined that the best model had the following parameters:
-    * 'activation': 'relu', 'first_units': 45, 'num_layers': 4, 'units_0': 55, 'units_1': 60, 'units_2': 20, 'units_3': 25, 'units_4': 30
     * Activation: ReLU
     * Number of Hidden Layers: 4
     * Neurons in First Layer: 45
     * Neurons in Second Layer: 55
     * Neurons in Third Layer: 60
     * Fourth Layer Would Be Output Layer, with Sigmoid Activation
-    ![Best Models Hyperparameters](Images\best3_ss.png)
+    ![Best Models Hyperparameters](Images/best3_ss.png)
 
  * Even after running the tuner, we were unable to get to the target accuarcy.
-    ![Best Models Evaluation](Images\bestmodels_evaluate_ss.png)
+    ![Best Models Evaluation](Images/bestmodels_evaluate_ss.png)
 
  * I think the model we chose is well suited to this task, but I don't think we have enough categorical features to get a better accuracy. Also, the variability of long-term economic decisions make accuracy above certain thresholds difficult and unrealistic. 73% isn't far off our target, and is reasonable for the intended purpose.
