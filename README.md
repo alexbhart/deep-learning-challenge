@@ -9,3 +9,6 @@ The purpose of our analysis is to see if we can design a model that will help us
 * I dropped the name and EIN from the data, as specific identifiers were not going to improve the quality or accuracy of the model at all.
 
 ### Evaluating the Model
+
+ * After running keras-tuner, it was determined that the best model had:
+    * 
